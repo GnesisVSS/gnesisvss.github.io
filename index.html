@@ -10,8 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <link rel="shortcut icon" href="{% static 'core/img/letra-p.png' %}" />
-    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    <link rel="shortcut icon" href="img/letra-p.png" />
+    <link rel="stylesheet" href="css/style.css">
     <style>
         .juegos {
             background-image: url('img/fondo.svg');
@@ -28,7 +28,7 @@
     <nav class="navbar navbar-expand-lg sticky-top " style="background-color: #484554;">
         <div class=" container">
             <a class="navbar-brand text-white" href="{% url 'main' %}">
-                <img src="{% static 'core/img/portafolio.png' %}" alt="Bootstrap" width="35" height="35"> Portafolio
+                <img src="img/portafolio.png" alt="Bootstrap" width="35" height="35"> Portafolio
             </a>
             <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,10 +42,10 @@
                             Juegos
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{% url 'tictactoe' %}" id="juego1">Tic Tac Toe</a></li>
-                            <li><a class="dropdown-item" href="{% url 'elahorcado' %}" id="juego2">Juego del Colgado</a>
+                            <li><a class="dropdown-item" href="tic-tac-toe.html" id="juego1">Tic Tac Toe</a></li>
+                            <li><a class="dropdown-item" href="juego-del-colgado.html" id="juego2">Juego del Colgado</a>
                             </li>
-                            <li><a class="dropdown-item" href="{% url 'quizzes' %}" id="juego3">Quizzes</a></li>
+                            <li><a class="dropdown-item" href="quizzes.html" id="juego3">Quizzes</a></li>
                         </ul>
                     </li>
                     <li class="nav-item ">
@@ -191,7 +191,7 @@
                             Front End!</h1>
                     </div>
                     <div class="col py-4">
-                        <img src="{% static 'core/img/prom.svg' %}" alt="">
+                        <img src="img/prom.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -206,7 +206,7 @@
                             <div class="card">
                                 <div class="imgbox">
                                     <div class="img">
-                                        <img src="{% static 'core/img/juegos.svg' %}" alt="">
+                                        <img src="img/juegos.svg" alt="">
                                     </div>
                                 </div>
                                 <div class="details">
@@ -218,7 +218,7 @@
                             <div class="card">
                                 <div class="imgbox">
                                     <div class="img">
-                                        <img src="{% static 'core/img/clima.svg' %}" alt="">
+                                        <img src="img/clima.svg" alt="">
                                     </div>
                                 </div>
                                 <div class="details">
@@ -230,7 +230,7 @@
                             <div class="card">
                                 <div class="imgbox">
                                     <div class="img">
-                                        <img src="{% static 'core/img/musica.svg' %}" alt="">
+                                        <img src="img/musica.svg" alt="">
                                     </div>
                                 </div>
                                 <div class="details">
