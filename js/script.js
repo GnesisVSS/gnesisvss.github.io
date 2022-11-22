@@ -218,31 +218,31 @@ function showCoords(event) {
         contexto.stroke();
     }
 
-    if (x <= 345 && y <= 286) {
+    if (x <= 429 && y <= 282 ) {
         // x en primera fila primera casilla
         dibujo_x1_1(x, y);
-    } else if (x >= 350 && x <= 483 && y <= 283) {
+    } else if (x >= 436 && x <= 569 && y <= 282) {
         // x en primera fila segunda casilla
         dibujo_x1_2(x, y);
-    }else if  (x >= 489 && x <= 625 && y <= 283){
+    }else if  (x >= 575 && y <= 282){
         // x en primera fila tercera casilla
         dibujo_x1_3(x, y);
-    }else if(x <= 345 && y >= 290 && y <= 423){
+    }else if(x <= 429 && y >= 290 && y <= 423){
         // x en segunda fila primera casilla
         dibujo_x2_1(x, y);
-    }else if(x >= 350 && x <= 483 && y >= 290 && y <= 423){
+    }else if(x >= 436 && x <= 569 && y >= 290 && y <= 423){
         // x en segunda fila segunda casilla
         dibujo_x2_2(x, y);
-    }else if(x >= 489 && x <= 625 && y >= 290 && y <= 423){
+    }else if(x >= 575 && y >= 290 && y <= 423){
         // x en segunda fila tercera casilla
         dibujo_x2_3(x, y);
-    }else if(x <= 345 && y >= 290 && y >= 429){
+    }else if(x <= 429  && y >= 429){
         // x en tercera fila primera casilla
         dibujo_x3_1 (x, y);
-    }else if(x >= 350 && x <= 483 && y >= 429){
+    }else if(x >= 436 && x <= 569 && y >= 429){
         // x en tercera fila segunda casilla
         dibujo_x3_2(x, y);
-    }else if(x >= 489 && x <= 625 && y >= 429){
+    }else if(x >= 575 && y >= 429){
         // x en tercera fila tercera casilla
         dibujo_x3_3(x, y);
     }
