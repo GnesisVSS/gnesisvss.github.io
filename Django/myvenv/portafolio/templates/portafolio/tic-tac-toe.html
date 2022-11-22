@@ -14,19 +14,17 @@ tictactoe - Portafolio
 <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-<div class="container">
+<div class="container" >
     <!-- <h1>Tic Tac Toe</h1> -->
-    <h1 class="animate__animated animate__flash">Tic Tac Toe
-
-    </h1>
+    <h1 class="animate__animated animate__flash" >Tic Tac Toe</h1>
 
     <br>
 
     <canvas id="canvas" style="border: 1px solid black; border-radius: 10px; background-color: rgb(70, 70, 70);"
         onclick="showCoords(event)"></canvas>
     <script src="{% static 'core/js/script.js' %} "></script>
-    <button class="btn-tic"> Jugar </button>
-<p id="prueba"></p>
+    <button class="btn-tic" id="btn" > Jugar </button>
+    <p id="prueba" style="visibility: hidden;"></p>
 
 </div>
 
