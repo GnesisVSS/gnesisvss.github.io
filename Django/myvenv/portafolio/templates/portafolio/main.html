@@ -25,7 +25,7 @@
             background-size: cover;
         }
     </style>
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -41,24 +41,13 @@
             </button>
             <div class="  collapse navbar-collapse  " id="navbarNav">
                 <ul class="navbar-nav text">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Juegos
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{% url 'tictactoe' %}" id="juego1">Tic Tac Toe</a></li>
-                            <li><a class="dropdown-item" href="{% url 'elahorcado' %}" id="juego2">Juego del Colgado</a>
-                            </li>
-                            <li><a class="dropdown-item" href="{% url 'quizzes' %}" id="juego3">Quizzes</a></li>
-                        </ul>
-                    </li>
+
                     <li class="nav-item ">
-                        <a class="nav-link text-white" href="#">Weather App</a>
+                        <a class="nav-link text-white" href="{% url 'recetas' %}">Recetas</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link text-white" href="#">Reproductor de Música</a>
-                    </li>
+                    </li> -->
 
                 </ul>
 
@@ -93,107 +82,16 @@
 
     </nav>
 
-    <!-- <div style="overflow: hidden;">
-        <svg preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg"
-            style="fill: #023047; width: 100%; height: 147px;">
-            <path
-                d="M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39C823.78 31 906.67 72 985.66 92.83c70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z" />
-        </svg>
-    </div> -->
-
     <section>
         {% block contenido %}
-        <!-- Cards -->
-        <!-- <img src="{% static 'core/img/descarga.png' %}"  class="img-fluid" alt="Imagen"> -->
 
         <div style="background-color: #484554;">
-            <!-- <div class="row g-0 text-center py-4">
-
-                <div class="row g-0 text-center">
-
-
-
-                    <div class="card-n">
-                        <div class="tools">
-                            <div class="circle">
-                                <span class="red box"></span>
-                            </div>
-                            <div class="circle">
-                                <span class="yellow box"></span>
-                            </div>
-                            <div class="circle">
-                                <span class="green box"></span>
-                            </div>
-                        </div>
-                        <div class="card__content py-4">
-                            <div class="row g-0 text-center">
-                                <div class="col-sm-6 col-md-8">.col-sm-6 .col-md-8</div>
-                                <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-                            </div>
-                            <div class="card-title">
-                                <h1 class="tracking-in-expand text-focus-in">Hola Mundo!</h1>
-                            </div>
-                            <div class="card-text">
-                                <p class="text-focus-in d-flex justify-content-center">Nostrud duis mollit ut ea sit ad
-                                    quis
-                                    consectetur sit magna aliqua adipisicing non. Nisi aliquip ut
-                                    proident minim proident aliquip esse fugiat eu in tempor ad. Minim est labore
-                                    laboris cillum
-                                    do eu
-                                    cillum nostrud enim nisi excepteur aliqua velit quis. Consectetur officia ullamco
-                                    quis esse
-                                    ullamco
-                                    non duis incididunt amet culpa aute mollit. Quis aliqua incididunt laborum occaecat
-                                    et
-                                    officia sunt
-                                    dolor. Laborum incididunt incididunt ex eu reprehenderit duis Lorem ad incididunt
-                                    incididunt.
-                                </p>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="row gy-5 ">
-                    <div class="col-4 ">
-                        <div class="card">
-                            <div class="card-details">
-                                <p class="text-title">Juegos</p>
-                                <p class="text-body">Diferentes juegos creados en base a Javascript</p>
-                            </div>
-                            <a href="{% url 'tictactoe' %}" class="card-button" role="button">Ver Más</a>
-                            <button class="card-button">Ver Más</button> 
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <div class="card-details">
-                                <p class="text-title">Aplicación Clima</p>
-                                <p class="text-body">Aplicación en base a Javascript utilizando API's</p>
-                            </div>
-                            <a href="{% url 'tictactoe' %}" class="card-button" role="button">Ver Más</a>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <div class="card-details">
-                                <p class="text-title">Reproductor de Música</p>
-                                <p class="text-body">Reproductor de musica utilizando diferentes tecnologías</p>
-                            </div>
-                            <a href="{% url 'tictactoe' %}" class="card-button" role="button">Ver Más</a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
             <div class="container col-sm-8 py-5 mx-auto">
                 <div class="row align-items-center py-2">
 
                     <div class="col text-white">
                         <h1 class="text-focus-in">Hola mundo! Soy Genesis, Ingeniera en Informática y Desarrolladora
-                            Front End!</h1>
+                            Frontend!</h1>
                     </div>
                     <div class="col py-4">
                         <img src="{% static 'core/img/prom.svg' %}" alt="">
@@ -205,10 +103,10 @@
         </div>
         <div class="juegos container-fluid py-4" style="background-color: #ADA9BB;">
             <div class="container col-sm-8  mx-auto ">
-                <h2 class="py-4 text-center">Aplicaciones y proyectos</h3>
+                <!-- <h2 class="py-4 text-center">Aplicaciones y proyectos</h3>
                     <div class="row gy-5 py-4">
                         <div class="col-4 d-flex justify-content-center">
-                            <a href="{% url 'tictactoe' %}">
+                            <a href="#">
                                 <div class="card">
                                     <div class="imgbox">
                                         <div class="img">
@@ -222,7 +120,7 @@
                             </a>
                         </div>
                         <div class="col-4 d-flex justify-content-center">
-                            <a href="{% url 'tictactoe' %}">
+                            <a href="#">
                                 <div class="card">
                                     <div class="imgbox">
                                         <div class="img">
@@ -236,7 +134,7 @@
                             </a>
                         </div>
                         <div class="col-4 d-flex justify-content-center">
-                            <a href="{% url 'tictactoe' %}">
+                            <a href="#">
                                 <div class="card">
                                     <div class="imgbox">
                                         <div class="img">
@@ -250,22 +148,26 @@
                             </a>
                         </div>
                         
-                        <div class="d-flex flex-row-reverse">
-                            <button class="cta">
-                                <span class="hover-underline-animation"> Ver Más </span>
-                                <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
-                                    <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
+                        
+                    </div>-->
 
 
 
 
             </div>
+            <div class="d-flex flex-row-reverse">
+                <button class="cta">
+                    <span class="hover-underline-animation"> Ver Más </span>
+                    <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
+                        id="arrow-horizontal">
+                        <path transform="translate(30)"
+                            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10"
+                            id="Path_10"></path>
+                    </svg>
+                </button>
+            </div>
         </div>
-        
+
         {% endblock contenido %}
     </section>
 

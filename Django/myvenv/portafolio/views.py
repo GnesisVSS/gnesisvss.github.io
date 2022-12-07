@@ -3,8 +3,8 @@ from django.shortcuts import render
 def main(request):
     return render(request, 'portafolio/main.html', {})
 
-def tictactoe(request):
-    return render(request,'portafolio/tic-tac-toe.html')
+def recetas(request):
+    return render(request,'portafolio/recetas.html')
 
 def elahorcado(request):
     return render(request,'portafolio/juego-del-colgado.html')
